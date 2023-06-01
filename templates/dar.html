@@ -1,0 +1,12 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<div class="row">
+    <div class="col-lg-8  offset-lg-2">
+        <form method="post" action="{{ url_for('tasks') }}">
+        <input type="submit" value="Stop/Start" name="stop" />
+        <input type="submit" value="Capture" name="click"/>
+        </form>
+        <img src="{{ url_for('video_feed') }}" height="80%">
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
